@@ -1,0 +1,1128 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Промт-портфолио Гафарова Акбара: десять проектов, собранных через нейросети.">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Промт-портфолио Акбара</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+</head>
+<body>
+<style>
+:root{
+  --paper:#EEEDE8;
+  --panel:#FCFBF8;
+  --ink:#1A1E26;
+  --ink-2:#59616E;
+  --ink-3:#858C97;
+  --rule:#D6D3CA;
+  --rule-strong:#B8B4A8;
+  --ai:#3F6685;
+  --ai-bg:#E2E9EF;
+  --hand:#8E5E1C;
+  --hand-bg:#F1E7D5;
+  --accent:#2F5E4E;
+  --accent-soft:#DDE7E1;
+  --shadow:0 1px 2px rgba(26,30,38,.06),0 8px 24px -12px rgba(26,30,38,.18);
+
+  --f-display:"Literata",Georgia,"Times New Roman",serif;
+  --f-body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;
+
+  --measure:66ch;
+  --wide:78ch;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#13161B; --panel:#1B1F26; --ink:#E9E7E1; --ink-2:#9BA3AF; --ink-3:#767E8A;
+    --rule:#2B3039; --rule-strong:#3C434E;
+    --ai:#8FB4D2; --ai-bg:#1E2A35; --hand:#DBA75A; --hand-bg:#2E2618;
+    --accent:#74BBA0; --accent-soft:#1C2A26;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#13161B; --panel:#1B1F26; --ink:#E9E7E1; --ink-2:#9BA3AF; --ink-3:#767E8A;
+  --rule:#2B3039; --rule-strong:#3C434E;
+  --ai:#8FB4D2; --ai-bg:#1E2A35; --hand:#DBA75A; --hand-bg:#2E2618;
+  --accent:#74BBA0; --accent-soft:#1C2A26;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--f-body);font-size:16px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:920px;margin:0 auto;padding-inline:20px;padding-block:0 72px}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 38%,transparent)}
+a:hover{border-bottom-color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+/* ---------- masthead ---------- */
+.masthead{
+  display:flex;flex-wrap:wrap;gap:22px 26px;
+  align-items:flex-end;
+  padding-block:52px 22px;border-bottom:2px solid var(--ink);
+}
+.portrait{
+  width:116px;height:145px;flex:none;
+  object-fit:cover;object-position:50% 22%;
+  border-radius:2px;
+  border:1px solid var(--rule-strong);
+  box-shadow:var(--shadow);
+  background:var(--panel);
+  display:block;
+}
+.mast-text{flex:1 1 260px;min-width:0}
+.masthead h1{
+  font-family:var(--f-display);font-weight:700;
+  font-size:clamp(30px,5.2vw,44px);line-height:1.08;
+  letter-spacing:-.018em;margin:0 0 8px;text-wrap:balance;
+}
+.masthead .who{font-size:15px;color:var(--ink-2);margin:0}
+.mast-links{
+  display:flex;flex-direction:column;gap:4px;
+  font-size:13.5px;font-family:var(--f-mono);
+  padding-bottom:3px;
+}
+
+.standfirst{
+  max-width:var(--measure);font-family:var(--f-display);
+  font-size:clamp(17px,2.2vw,19px);line-height:1.6;
+  padding-block:30px 8px;margin:0;
+}
+.standfirst.sub{padding-block:0 8px;color:var(--ink-2);font-size:16px}
+
+/* ---------- index ---------- */
+.index{margin-block:36px 0;padding:22px 24px;background:var(--panel);border:1px solid var(--rule);border-radius:3px}
+.index h2{
+  font-family:var(--f-body);font-size:12px;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+.index ol{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.index li{display:flex;gap:14px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--rule)}
+.index li:last-child{border-bottom:0}
+.index .n{font-family:var(--f-mono);font-size:12px;color:var(--ink-3);flex:none;width:3.6em}
+.index .k{margin-left:auto;font-size:12px;color:var(--ink-3);font-family:var(--f-mono);text-align:right;padding-left:12px}
+
+/* ---------- principles ---------- */
+.principles{margin-block:56px}
+.principles > h2,.checklist > h2{
+  font-family:var(--f-display);font-weight:600;
+  font-size:clamp(22px,3.4vw,27px);margin:0 0 6px;letter-spacing:-.012em;
+}
+.section-note{color:var(--ink-2);max-width:var(--measure);margin:0 0 26px;font-size:15px}
+.plist{display:grid;margin:0;padding:0}
+.plist > div{display:grid;grid-template-columns:minmax(0,15em) 1fr;gap:8px 28px;padding:16px 0;border-top:1px solid var(--rule)}
+.plist > div:last-child{border-bottom:1px solid var(--rule)}
+.plist dt{font-weight:600;font-size:15px}
+.plist dd{margin:0;color:var(--ink-2);font-size:15px;max-width:52ch}
+
+.legend{
+  display:flex;flex-wrap:wrap;gap:10px 26px;margin-block:40px 0;
+  padding:16px 20px;border-left:3px solid var(--rule-strong);
+  background:var(--panel);font-size:14px;color:var(--ink-2);
+}
+.swatch{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;vertical-align:middle}
+.sw-ai{background:var(--ai)}
+.sw-hand{background:var(--hand)}
+
+/* ---------- cases ---------- */
+.case{padding-block:52px;border-top:1px solid var(--rule)}
+.case:first-of-type{border-top:2px solid var(--ink)}
+.case-head{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:baseline;margin-bottom:14px}
+.case-id{
+  font-family:var(--f-mono);font-size:12px;font-weight:500;letter-spacing:.1em;
+  color:var(--accent);padding:3px 9px;background:var(--accent-soft);border-radius:2px;
+}
+.case-kind{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--ink-3);text-transform:uppercase}
+.case h2{
+  font-family:var(--f-display);font-weight:600;
+  font-size:clamp(23px,3.6vw,30px);line-height:1.2;letter-spacing:-.018em;
+  margin:0 0 14px;max-width:24ch;text-wrap:balance;
+}
+.task{max-width:var(--measure);margin:0 0 22px}
+.facts{
+  display:grid;grid-template-columns:minmax(0,9.5em) 1fr;gap:7px 22px;
+  margin:0 0 34px;padding:16px 18px;background:var(--panel);
+  border:1px solid var(--rule);border-radius:3px;font-size:14px;
+}
+.facts dt{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.04em;color:var(--ink-3);text-transform:uppercase;padding-top:3px}
+.facts dd{margin:0;color:var(--ink-2);overflow-wrap:anywhere}
+
+.step{margin-block:0 38px}
+.step:last-child{margin-bottom:0}
+.step-head{display:flex;gap:12px;align-items:baseline;margin-bottom:4px}
+.step-n{font-family:var(--f-mono);font-size:12px;color:var(--ink-3);flex:none;padding-top:2px}
+.step h3{font-family:var(--f-body);font-weight:600;font-size:16px;margin:0}
+.step-why{margin:0 0 14px 26px;color:var(--ink-2);font-size:14.5px;max-width:58ch}
+code.inl{font-family:var(--f-mono);font-size:.88em;background:var(--panel);padding:1px 5px;border-radius:2px;border:1px solid var(--rule)}
+
+.prompt{
+  background:var(--panel);border:1px solid var(--rule);
+  border-left:3px solid var(--rule-strong);border-radius:3px;
+  margin:0 0 16px 26px;box-shadow:var(--shadow);
+}
+.prompt-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 12px 8px 16px;border-bottom:1px solid var(--rule)}
+.prompt-label{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.copy{
+  font-family:var(--f-body);font-size:12px;font-weight:500;color:var(--ink-2);
+  background:transparent;border:1px solid var(--rule-strong);border-radius:2px;
+  padding:4px 10px;cursor:pointer;line-height:1.3;white-space:nowrap;
+}
+.copy:hover{color:var(--ink);border-color:var(--ink-2)}
+.prompt pre{margin:0;padding:16px;overflow-x:auto}
+.prompt code{font-family:var(--f-mono);font-size:13px;line-height:1.62;color:var(--ink);white-space:pre;display:block}
+
+.outcome{margin:0 0 10px 26px;padding:12px 16px;border-radius:3px;font-size:14.5px;line-height:1.6}
+.outcome:last-child{margin-bottom:0}
+.outcome .tag{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:5px;font-weight:500}
+.outcome.ai{background:var(--ai-bg)}
+.outcome.ai .tag{color:var(--ai)}
+.outcome.hand{background:var(--hand-bg)}
+.outcome.hand .tag{color:var(--hand)}
+.outcome p{margin:0 0 8px}
+.outcome p:last-child{margin-bottom:0}
+
+.fill{background:var(--hand-bg);color:var(--hand);font-family:var(--f-mono);font-size:12.5px;padding:1px 6px;border-radius:2px;border:1px dashed var(--hand)}
+
+.result{
+  margin:22px 0 0 26px;padding:14px 18px;border-left:3px solid var(--accent);
+  background:var(--accent-soft);border-radius:0 3px 3px 0;font-size:14.5px;
+}
+.result .tag{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:5px;font-weight:500}
+
+.checklist{padding-block:52px 0;border-top:2px solid var(--ink)}
+.checks{list-style:none;margin:0;padding:0;max-width:var(--wide)}
+.checks li{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:13px 0;border-bottom:1px solid var(--rule);font-size:15px;color:var(--ink-2)}
+.checks li:first-child{border-top:1px solid var(--rule)}
+.checks .box{width:14px;height:14px;margin-top:5px;flex:none;border:1.5px solid var(--hand);border-radius:2px}
+.checks b{color:var(--ink);font-weight:600}
+
+footer{margin-top:60px;padding-top:24px;border-top:1px solid var(--rule);font-size:13.5px;color:var(--ink-3);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+@media (max-width:640px){
+  .plist > div{grid-template-columns:1fr;gap:4px}
+  .facts{grid-template-columns:1fr;gap:2px 0}
+  .facts dd{margin-bottom:10px}
+  .facts dd:last-child{margin-bottom:0}
+  .prompt,.outcome,.result,.step-why{margin-left:0}
+  .prompt code{font-size:12.5px}
+  .index li{flex-wrap:wrap}
+  .index .k{margin-left:0;width:100%;text-align:left;padding-left:0}
+  .portrait{width:88px;height:110px}
+  .mast-links{flex-direction:row;flex-wrap:wrap;gap:6px 16px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <img class="portrait" src="photo.jpg" alt="Гафаров Акбар" width="560" height="700">
+  <div class="mast-text">
+    <h1>Промт-портфолио</h1>
+    <p class="who">Гафаров Акбар · AI-креатор, вайбкодер · Калининград</p>
+  </div>
+  <nav class="mast-links">
+    <a href="https://cv-akbar.vercel.app/">Портфолио</a>
+    <a href="https://github.com/SupremeGoogle">GitHub</a>
+    <a href="https://t.me/supremeHn">Telegram</a>
+  </nav>
+</header>
+
+<p class="standfirst">Десять проектов, собранных через нейросети. По каждому — промт целиком, что модель выдала на него и что я после этого правил руками.</p>
+<p class="standfirst sub">Промты приведены в том виде, в котором уходили в модель: с ограничениями, запретами и заданным форматом ответа. Все ссылки ведут на живые проекты и открытые репозитории — код можно открыть и сверить с промтом.</p>
+
+<section class="index" aria-label="Содержание">
+  <h2>Кейсы</h2>
+  <ol>
+    <li><span class="n">К—1</span><a href="#k1">Городское собрание: лендинг, QR-билеты, админка</a><span class="k">Codex · Supabase</span></li>
+    <li><span class="n">К—2</span><a href="#k2">Мини-игра, которую дописывает агент</a><span class="k">Claude · React</span></li>
+    <li><span class="n">К—3</span><a href="#k3">Презентации четырьмя разными способами</a><span class="k">Claude Design · HTML · PPTX</span></li>
+    <li><span class="n">К—4</span><a href="#k4">Шаблон, из которого вышло 20+ лендингов</a><span class="k">Промт-шаблон</span></li>
+    <li><span class="n">К—5</span><a href="#k5">Три дизайн-концепции до первой строки кода</a><span class="k">Арт-дирекшн</span></li>
+    <li><span class="n">К—6</span><a href="#k6">Шесть кадров как один фотосет</a><span class="k">Изображения</span></li>
+    <li><span class="n">К—7</span><a href="#k7">Восьмисекундный луп под заголовок</a><span class="k">Higgsfield · Arena AI</span></li>
+    <li><span class="n">К—8</span><a href="#k8">Бот, который не теряет источник лида</a><span class="k">Боты · CRM</span></li>
+    <li><span class="n">К—9</span><a href="#k9">Конспект мастер-класса как лид-магнит</a><span class="k">Контент</span></li>
+    <li><span class="n">К—10</span><a href="#k10">Свадебная фотогалерея в реальном времени</a><span class="k">Next.js · Supabase</span></li>
+  </ol>
+</section>
+
+<section class="principles">
+  <h2>Как я строю промт</h2>
+  <p class="section-note">Шесть правил, которые видно в каждом промте ниже. Они не про красивые формулировки — про то, чтобы получить рабочий результат за один-два прохода, а не за двадцать.</p>
+  <dl class="plist">
+    <div><dt>Контекст раньше задачи</dt><dd>Кто аудитория, в какой момент она это увидит, чем меряется успех. Без этого модель выдаёт средний по больнице результат.</dd></div>
+    <div><dt>Запреты наравне с требованиями</dt><dd>Что нельзя делать — отдельным блоком. Модель ошибается предсказуемо, и дешевле закрыть эти места заранее, чем вычищать потом.</dd></div>
+    <div><dt>Формат ответа задаю я</dt><dd>Список файлов, схема таблицы, диff, структура секций. Свободная форма ответа — это лишний раунд правок.</dd></div>
+    <div><dt>План до кода</dt><dd>Сначала структура и ожидание моего «ок». Развернуть неверный план на 600 строк дороже, чем прочитать десять строк оглавления.</dd></div>
+    <div><dt>Цепочка, а не один выстрел</dt><dd>Концепт, потом сборка, потом точечные правки. Один гигантский промт «сделай всё» даёт кашу, которую невозможно править.</dd></div>
+    <div><dt>Шаблон вместо разового промта</dt><dd>Повторяющаяся задача превращается в форму с переменными. Кейс 4 — ровно этот случай: один шаблон, больше двадцати сайтов.</dd></div>
+  </dl>
+</section>
+
+<div class="legend">
+  <span><span class="swatch sw-ai"></span><b>Синий блок</b> — что выдала модель</span>
+  <span><span class="swatch sw-hand"></span><b>Охряный блок</b> — что я правил руками</span>
+</div>
+
+<!-- ============ К1 ============ -->
+<section class="case" id="k1">
+  <div class="case-head"><span class="case-id">К—1</span><span class="case-kind">Мероприятие под ключ · Codex</span></div>
+  <h2>Городское собрание: лендинг, QR-билеты и админка на входе</h2>
+  <p class="task">Городское родительское собрание «Родитель Навигатор» — мероприятие на несколько сотен человек. Одним проектом закрыт весь путь участника: увидел ссылку в родительском чате, зарегистрировался, получил на почту PDF-билет с QR, пришёл, показал телефон на входе, менеджер отсканировал и отметил. Плюс презентации трём спикерам — <a href="#k3">кейс 3</a>.</p>
+  <dl class="facts">
+    <dt>Лендинг</dt><dd><a href="https://kiberone.vercel.app/">kiberone.vercel.app</a></dd>
+    <dt>Код</dt><dd><a href="https://github.com/SupremeGoogle/KIBERone">github.com/SupremeGoogle/KIBERone</a></dd>
+    <dt>Стек</dt><dd>React 19 + TypeScript, Vite, Tailwind, react-router. Supabase — база регистраций, qrcode.react — генерация QR, @yudiel/react-qr-scanner — сканер в админке, EmailJS — письма, jsPDF + html2canvas — PDF-билет</dd>
+    <dt>Инструмент</dt><dd>Codex</dd>
+  </dl>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">1</span><h3>Лендинг и регистрация</h3></div>
+    <p class="step-why">Первый промт задаёт не «красивую страницу», а поведение формы под реальную аудиторию: родитель с телефона, в чате, за тридцать секунд.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Нужен лендинг городского родительского собрания
+«Родитель Навигатор: как подготовить ребёнка к профессиям
+будущего». Калининград, вход бесплатный по регистрации,
+зал на несколько сотен мест.
+
+Аудитория: родители школьников 6–14 лет. Больше половины
+увидят ссылку в родительском чате, откроют с телефона
+и решат за тридцать секунд.
+
+СТЕК: React 19 + TypeScript, Vite, Tailwind, react-router.
+База регистраций — Supabase. Деплой на Vercel.
+
+СТРАНИЦЫ:
+/       лендинг с формой регистрации
+/admin  закрытая часть, к ней вернёмся отдельным промтом
+
+ЛЕНДИНГ:
+1. Первый экран: название, дата, город, адрес зала и кнопка
+   «Зарегистрироваться». Дата и адрес видны без скролла —
+   это первое, что ищет родитель.
+2. О чём собрание — три тезиса, не абзацы.
+3. Спикеры: фото из public, имена и должности из data-файла.
+4. Программа по времени.
+5. Форма: имя, фамилия, телефон, email, сколько человек придёт.
+
+ТРЕБОВАНИЯ К ФОРМЕ:
+— Телефон с маской, email проверяется до отправки.
+— Повторная регистрация того же email не создаёт вторую
+  запись, а показывает «вы уже зарегистрированы,
+  билет отправлен повторно».
+— На время запроса кнопка блокируется. С мобильного люди
+  жмут второй раз, и в базу падают дубли.
+— Ошибка сети — человеческий текст и кнопка «повторить»,
+  а не белый экран.
+
+Ключи Supabase только из переменных окружения.
+Тексты не сочиняй, где нужен копирайт — ставь [ТЕКСТ].
+
+Сначала схема таблицы регистраций и структура страниц.
+Код после моего «ок».</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Схема таблицы и структура страниц пришли до кода — и на схеме сразу стало видно, что поле «сколько человек придёт» нужно и в билете, и в счётчике посещаемости. Поймать это на схеме дешевле, чем после того, как билет уже свёрстан.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Все тексты писал сам — заглушки <code class="inl">[ТЕКСТ]</code> остались честно пустыми, и это правильно: оффер мероприятия модель придумать не может. Порядок полей поменял: сначала телефон, потом email. Родители чаще ошибаются в почте, и если она первая, форму бросают на первом же спотыкании.</p></div>
+  </article>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">2</span><h3>QR-билет и письмо на почту</h3></div>
+    <p class="step-why">Тут всё держится на двух вещах, которые модель сама не учитывает: билет должны прочитать со стекла телефона в плохом свете, и регистрация не должна пропасть, если письмо не ушло.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Теперь билет. После регистрации человек получает на почту
+письмо с QR-кодом, по которому его отметят на входе.
+
+КАК ЭТО РАБОТАЕТ:
+1. При регистрации генерируется уникальный идентификатор
+   участника. Не порядковый номер: по нему не должно быть
+   возможности угадать чужой билет.
+2. Из идентификатора рисуется QR через qrcode.react.
+3. Билет собирается в PDF: html2canvas снимает свёрстанный
+   блок, jsPDF кладёт его на A4. На билете имя, дата,
+   адрес зала, время начала, число человек и сам QR.
+4. Письмо уходит через EmailJS на указанную почту.
+
+ОБЯЗАТЕЛЬНО:
+— QR читается с экрана телефона при низкой яркости:
+  не меньше 220 px, чёрный на белом, без цветной подложки
+  и без логотипа поверх.
+— Билет остаётся читаемым распечатанным на чёрно-белом
+  принтере: часть родителей придёт с бумажкой.
+— Если письмо не ушло, регистрация всё равно сохраняется,
+  а человеку показывается кнопка «скачать билет».
+  Потерять регистрацию из-за почты нельзя.
+— В самом QR только идентификатор. Никаких имён,
+  телефонов и почты: этот код увидят посторонние люди.
+
+Покажи, как выглядит объект билета и что именно кодируется
+в QR, до того как писать вёрстку.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Первый вариант клал в QR всю карточку участника целиком — имя, телефон, почту. Запрет в промте сработал только со второго прохода, после прямого указания. Именно поэтому я и просил показать содержимое QR до вёрстки: на готовом коде это уже не заметно.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Тестировал сканирование сам: телефон на минимальной яркости, распечатка на старом лазернике, помятая бумага. На отражающем стекле в первой версии не читалось — увеличил тихую зону вокруг кода. Письмо проверил в четырёх почтовиках: в одном PDF не подхватывался вложением, менял способ прикрепления.</p></div>
+  </article>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">3</span><h3>Админка со сканером</h3></div>
+    <p class="step-why">Промт написан от сценария, а не от функций: очередь на входе, шумно, менеджер держит телефон одной рукой. Из этого следуют и размер кнопок, и цветовые статусы, и очередь отложенных отметок.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Админская часть /admin для менеджера на входе в зал.
+
+СЦЕНАРИЙ: родитель подходит, показывает QR с телефона или
+с распечатки, менеджер сканирует и отмечает приход.
+За ним очередь, в зале шумно, телефон менеджер держит
+одной рукой. Вторая рука занята списком.
+
+ЧТО НУЖНО:
+1. Вход по паролю. Пароль не в коде.
+2. Сканер камерой через @yudiel/react-qr-scanner,
+   тыловая камера по умолчанию.
+3. После скана — крупная карточка: имя, сколько человек,
+   и один из трёх статусов:
+   • зелёный «отмечен»;
+   • жёлтый «уже отмечен» с временем первой отметки —
+     это не ошибка, а обычная ситуация, когда семья
+     приходит по одному билету;
+   • красный «билет не найден».
+4. Статус должен читаться с расстояния вытянутой руки
+   по цвету, не читая текст.
+5. Список всех регистраций с поиском по фамилии: если
+   камера не справилась, менеджер находит руками
+   и отмечает кнопкой.
+6. Счётчик наверху: зарегистрировано / пришло.
+
+ОГРАНИЧЕНИЯ:
+— Вёрстка под телефон в руке, кнопки крупные.
+— Отметка проходит меньше чем за секунду: сначала
+  показывай результат, потом досылай запрос.
+— Связь в зале проседает. Неудачная отметка встаёт
+  в очередь и повторяется, а не теряется молча.
+— Ошибочную отметку можно отменить тут же, одной кнопкой.
+— Удалять регистрации из админки нельзя вообще.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Сканер, три статуса и поиск по списку собрались с первого раза. Оптимистичная отметка — показать результат до ответа сервера — реализована ровно так, как просил.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Прогнал вживую с человеком, который работал на входе. Первое, что вылезло: сканер ловил один и тот же код по три раза подряд и мигал статусом — добавил паузу после успешного скана. Жёлтый статус изначально выглядел как ошибка, менеджер начинал разбираться и тормозил очередь — переписал текст и подпись под ним.</p></div>
+    <div class="result"><span class="tag">Результат</span>Регистрация, рассылка билетов, отметка на входе и подсчёт пришедших закрыты одним проектом, без сторонних сервисов и без бумажных списков. Данные участников не выходят за пределы Supabase и не попадают в QR.</div>
+  </article>
+</section>
+
+<!-- ============ К2 ============ -->
+<section class="case" id="k2">
+  <div class="case-head"><span class="case-id">К—2</span><span class="case-kind">Мини-игра · автономный агент</span></div>
+  <h2>Мини-игра, которую каждый день дописывает агент</h2>
+  <p class="task">Мой собственный проект, не клиентский. Мобильная викторина-сравнение: игроку показывают две карточки и задают вопрос — кто тяжелее, кто быстрее, кто дольше спит, что выше. Верный ответ <b>+1</b>, ошибка <b>−2</b>, серия верных даёт множитель. Тридцать уровней, у каждого своя тема сравнения и свои двадцать с лишним карточек с фактами.</p>
+  <p class="task">Интересна не столько игра, сколько то, что она развивается без меня. Каждый день по расписанию запускается роутина Claude: берёт задачу, делает её целиком, проверяет сборку, пишет запись в CHANGELOG и пушит в прод. Я только веду бэклог.</p>
+  <dl class="facts">
+    <dt>Код</dt><dd><a href="https://github.com/SupremeGoogle/GuessWhat">github.com/SupremeGoogle/GuessWhat</a> — бэклог, история агента и оператор лежат прямо в репозитории</dd>
+    <dt>Стек</dt><dd>React 18 + TypeScript strict, Vite 6, Web Audio API, canvas-confetti</dd>
+    <dt>Инструмент</dt><dd>Claude, ежедневная роутина. Я задавал механику, ограничения и разбирал баги.</dd>
+  </dl>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">1</span><h3>Концепт до кода</h3></div>
+    <p class="step-why">Первый промт вообще ничего не кодит. Задача — получить три разные механики и выбрать одну, а не чинить потом ту, что модель придумала между делом.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Ты продуктовый дизайнер мобильных казуальных игр.
+
+Задача: придумать механику для веб-викторины, которую человек
+открывает с телефона и играет 2–3 минуты, без регистрации,
+без обучения и без объяснений.
+
+Вводные:
+— аудитория: подростки 10–16 лет и их родители;
+— заход только по прямой ссылке, никаких сторов;
+— контент должен масштабироваться: я хочу добавлять новые
+  темы, не переписывая игру.
+
+Дай 3 концепта. По каждому:
+1. Механика в одном предложении.
+2. Что игрок делает в первые 5 секунд.
+3. Почему он откроет игру второй раз.
+4. Как устроены данные, чтобы новая тема = один новый файл.
+5. Слабое место концепта — честно, а не для галочки.
+
+Ничего не кодируй. Только концепты, таблицей.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Три механики: сравнение двух объектов, угадывание по нарастающим подсказкам и «правда или миф». Первая выиграла по пункту 4 — данные ложатся в плоский массив, новая тема действительно один файл.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Модель предложила +1 за верный ответ и 0 за неверный. При такой экономике выгодно тыкать наугад, риска нет. Поставил −2 за ошибку. Позже добавился множитель за серию с шагом 3, и пороги звёзд пришлось пересчитать с 4/8 на 10/20 — старые брались слишком легко.</p></div>
+  </article>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">2</span><h3>Сборка проекта</h3></div>
+    <p class="step-why">Здесь задаётся всё, на чём модель обычно уезжает: стек, дерево файлов, деплой в подпапку и запрет выдумывать данные.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Собери мобильную веб-игру по утверждённой механике.
+
+СТЕК — не отклоняться:
+React 18 + TypeScript в strict, Vite 6, чистый CSS
+на переменных. Иконки только lucide-react. Звук только
+через Web Audio API, никаких аудиофайлов.
+Конфетти — canvas-confetti. Больше никаких зависимостей.
+
+СТРУКТУРА — создай ровно так:
+src/App.tsx           роутинг экранов и глобальный стейт
+src/components/       SplashScreen, StartMenu, LevelSelect,
+                      Level1Game, LevelLockedModal
+src/data/animals.ts   20 животных: id, название, вес, факт
+src/data/levels.ts    сетка из 30 уровней, открыт первый
+src/types/index.ts    Animal, LevelInfo, GameStats,
+                      PairComparison
+src/utils/audio.ts    класс SoundManager
+src/styles/index.css  дизайн-система на CSS-переменных
+
+МЕХАНИКА:
+Две карточки, вопрос «Кто тяжелее?». Верно +1, неверно −2.
+Раунд — 10 пар. Пары внутри раунда не повторяются.
+Пара с одинаковым весом недопустима: подбирай другого.
+
+ОГРАНИЧЕНИЯ:
+— Mobile-first, минимальная зона нажатия 48×48 px.
+— Деплой на GitHub Pages в подпапку /GuessWhat/,
+  поэтому пути к ассетам только относительные.
+— tsc --noEmit проходит без единой ошибки.
+— Веса животных не выдумывай. Не уверен в цифре —
+  ставь TODO, я проверю по источнику сам.
+
+Сначала покажи дерево файлов и жди подтверждения.
+Код — вторым сообщением.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Дерево совпало с заданным, код собрался с первого раза, TypeScript прошёл чисто. SoundManager синтезирует звуки на осцилляторах — внешних файлов действительно нет.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>TODO по весам оказалось четыре, сверял по справочникам — две цифры были бы неверными, если бы я разрешил их придумать. Плюс вылезло то, чего промт не покрыл: в проде не грузились картинки из-за base path, и 16 файлов весили больше 150 КБ. Пережал через mozjpeg до 100–153 КБ и удалил 5,6 МБ ассетов, которые никуда не подключались.</p></div>
+  </article>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">3</span><h3>Точечный разбор багов</h3></div>
+    <p class="step-why">Баги я нахожу сам, проходя игру. В промт идёт не «почини игру», а три конкретных дефекта с указанием, где они живут, и запрет трогать что-то ещё.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Три бага. Чини по одному, после каждого — отдельный коммит.
+
+1. Утечка таймера. В Level1Game таймер ставится в useEffect,
+   но при рестарте раунда старый не снимается — после
+   нескольких заходов счёт начинает скакать. Держи id
+   в useRef, снимай перед постановкой нового
+   и при размонтировании.
+
+2. Повторы пар. generateNewPair берёт случайную пару каждый
+   раз, поэтому внутри раунда одна и та же пара выпадает
+   дважды. Собери очередь пар заранее, перемешай
+   Фишером-Йетсом, пересоздавай при рестарте.
+
+3. Ничья по весу. Если веса совпали, любой выбор
+   засчитывается как ошибка. Подбирай второго кандидата
+   с другим значением.
+
+По каждому багу сначала процитируй строку, в которой он
+живёт, потом покажи диff. Ничего вокруг не рефактори.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Все три диффа точечные, ни одного лишнего файла. Требование сначала процитировать строку сработало как проверка: во втором баге модель процитировала не ту функцию, и я увидел это до правки, а не после.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Проходил игру после каждого коммита. Утечка таймера воспроизводилась только с четвёртого рестарта подряд — без ручного прохода я бы её закрытие не подтвердил.</p></div>
+  </article>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">4</span><h3>Оператор для ежедневного агента</h3></div>
+    <p class="step-why">Это уже не промт под задачу, а инструкция агенту, который запускается сам, раз в сутки, без меня рядом. Лежит в репозитории: <code class="inl">.github/daily-task.md</code>.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт · оператор</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Ты ежедневный агент проекта GuessWhat. Запускаешься сам,
+раз в сутки, человека рядом нет. Закрываешь ровно одну задачу.
+
+ПОРЯДОК:
+1. Открой TASKS.md, возьми первую невыполненную задачу
+   сверху. Приоритет секций: «Баги» → «Функциональность»
+   → «Контент». Больше одной задачи за запуск не брать.
+2. Сделай её целиком. Не частично, не заготовкой.
+3. Прогони npm run lint и npm run build. Если хоть что-то
+   падает — чини, пока не пройдёт. Коммит с падающей
+   сборкой недопустим.
+4. Отметь задачу [x], перенеси в «Сделано» с датой
+   и абзацем: что именно изменил и в каких файлах.
+5. Один коммит — одна задача, пуш в main.
+   git config user.name "SupremeGoogle"
+
+ГРАНИЦЫ:
+— Интернета нет. Только то, что уже лежит в public/.
+  Нужна картинка, которой нет — ставь emoji-фолбэк,
+  не выдумывай URL.
+— Base path GitHub Pages — /GuessWhat/. Абсолютные пути
+  к ассетам ломают прод, только относительные.
+— Mobile-first, зона нажатия не меньше 48×48 px.
+— Ноль ошибок TypeScript и ноль ошибок в консоли
+  при прохождении уровня.
+— Файлы, не относящиеся к взятой задаче, не трогай.
+
+КОГДА БЭКЛОГ ПУСТ:
+Не останавливайся и не бери мелочь ради галочки.
+Допиши в конец TASKS.md три осмысленные задачи —
+новый уровень, новая категория данных, полировка UX —
+и выполни первую из них.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>С 10 августа агент закрыл 27 задач бэклога, по одной в день, каждая — отдельный коммит с записью в CHANGELOG. Уровни 12–15 с двумя десятками карточек данных в каждом, сохранение прогресса, доступность карточек с клавиатуры, вибро-отклик, множитель за серию, кнопка «Поделиться» через Web Share API — всё это он сделал сам.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Бэклог веду я — агент исполнитель, а не продакт. Пункт про пустой бэклог появился после того, как агент, доделав всё, начал изобретать микроправки ради галочки. Пункт про запрет выдуманных URL — после того, как он подставил ссылку на несуществующую картинку: сборка прошла, а прод сломался.</p></div>
+  </article>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">5</span><h3>Когда бэклог кончился — роутина переключилась на проверку</h3></div>
+    <p class="step-why">Задачи закончились, а игра осталась. Переписал оператор с «делай новое» на «проверяй сделанное»: агент проходит уровни партиями и чинит то, что находит. Размер партии случайный, чтобы проверка не превращалась в формальность на одном и том же объёме.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт · ежедневная проверка</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Ежедневная проверка уровней GuessWhat. Не добавляй новое —
+проверяй то, что уже наполнено.
+
+ШАГ 0. Возьми случайное число от 1 до 8. Столько подряд идущих
+непроверенных уровней и берёшь в этот прогон. Точку, на которой
+остановился в прошлый раз, читай из
+.github/level-qa-state.json.
+
+ПО КАЖДОМУ УРОВНЮ:
+1. Проверь, что все картинки уровня реально лежат в public/.
+   Ссылка есть, а файла нет — это баг, а не мелочь.
+2. Оцени содержание: интересная ли тема сравнения, не дублирует
+   ли она соседние уровни, корректны ли сами факты.
+   Сомневаешься в цифре — не оставляй её, помечай.
+3. Пройди уровень локально до конца. Ошибки в консоли, зависший
+   таймер, повтор пары, ничья — всё это ищешь игрой,
+   а не чтением кода.
+4. npm run lint и npm run build должны пройти.
+
+ШАГ 5. Обнови .github/level-qa-state.json, добавь запись
+в CHANGELOG.md с тем, что нашёл и что починил, и закоммить
+только этот уровень. Один уровень — один коммит.
+
+ГРАНИЦЫ:
+— Интернета нет, только локальные ассеты в public/.
+— Mobile-first, зона нажатия не меньше 48×48 px.
+— Ноль ошибок TypeScript и ноль ошибок в консоли
+  при прохождении.
+— Пути к ассетам относительные: база GitHub Pages
+  это /GuessWhat/.
+
+ПРОГОН СЧИТАЕТСЯ УДАЧНЫМ, ЕСЛИ по каждому уровню партии
+картинки на месте, тема оценена, уровень пройден
+и найденные баги починены.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Проверка идёт до сих пор, каждый день. Последний прогон — партия из шести уровней, с 6-го по 11-й: все карточки проверены на уникальность и работоспособность. Днём раньше агент нашёл и исправил неверный факт о температуре поверхности Солнца на пятом уровне — то есть ловит не только код, но и содержание.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Случайный размер партии добавил сам: с фиксированным числом агент подгонял темп под цифру и проверял поверхностно. Файл состояния появился после того, как первый вариант каждый день перепроверял одни и те же первые уровни и не двигался дальше.</p></div>
+    <div class="result"><span class="tag">Результат</span>Месяц ежедневной работы без моего участия: сначала закрытый бэклог из 27 задач, теперь ежедневный QA-проход по уровням. Мои затраты — минут десять в неделю на бэклог и на чтение того, что агент записал в CHANGELOG.</div>
+  </article>
+</section>
+
+<!-- ============ К3 ============ -->
+<section class="case" id="k3">
+  <div class="case-head"><span class="case-id">К—3</span><span class="case-kind">Презентации</span></div>
+  <h2>Презентации четырьмя разными способами</h2>
+  <p class="task">Под одно и то же содержание нужны разные носители: лонгрид, который родитель листает с телефона, файл для проектора без интернета, редактируемый PPTX для организаторов и вручную собранный макет там, где важен полный контроль над каждым пикселем. Я делаю все четыре и выбираю по задаче, а не по привычке.</p>
+  <dl class="facts">
+    <dt>Claude Design</dt><dd>Презентация-лонгрид о школе для родителей — <a href="https://kiberone39.ru">kiberone39.ru</a></dd>
+    <dt>Figma</dt><dd><a href="https://www.figma.com/design/evNi7TnjbeolCmy6pQv4Xl/Untitled?node-id=0-1">макет, собранный руками</a></dd>
+    <dt>HTML и PPTX</dt><dd>Промты ниже</dd>
+    <dt>NotebookLM и Gemini</dt><dd>Переработка исходных материалов в структуру до сборки слайдов — <a href="https://disk.yandex.ru/d/5Ypr_HmQBIuO_g">готовые презентации</a></dd>
+  </dl>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">1</span><h3>Сначала структура, без текста слайдов</h3></div>
+    <p class="step-why">Просить сразу слайды — получить двадцать штук воды. Сначала скелет и честный ответ, что выбросить, если регламент срежут прямо на месте.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Помоги собрать выступление на городском родительском
+собрании.
+
+Контекст: три спикера подряд, общий зал, родители
+школьников, часть пришла по разнарядке и не хочет
+здесь быть. Мой блок идёт вторым, 12 минут.
+Цель блока: чтобы после собрания ко мне подошли
+и записали ребёнка на пробное занятие.
+
+Сначала только структура, текста слайдов не надо:
+— сколько слайдов и о чём каждый, по строке;
+— где стоит момент, ради которого зал поднимет глаза
+  от телефона;
+— какой слайд выбросить первым, если попросят уложиться
+  в 8 минут, и какой вторым.
+
+Ограничения: не больше 12 слайдов. Ни одного слайда,
+который я буду читать вслух дословно.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Десять слайдов с пометкой, что резать первым. Это пригодилось буквально: регламент на месте сократили, и я знал, что убирать, не думая.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Точку внимания перенёс с четвёртого слайда на второй: к четвёртому зал уже ушёл в телефон, и поднимать его оттуда дороже, чем не отпускать. Все формулировки переписал под свою речь — с чужого текста выступать нельзя, это слышно из зала.</p></div>
+  </article>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">2</span><h3>HTML-презентация для проектора</h3></div>
+    <p class="step-why">Главное ограничение здесь не дизайнерское, а бытовое: в зале не будет вайфая. Из него следует всё остальное.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Собери презентацию по утверждённой структуре
+одним HTML-файлом.
+
+Формат 16:9, листается стрелками и свайпом, открывается
+с ноутбука спикера и с проектора.
+Всё в одном файле: стили, скрипт, шрифты — инлайном.
+Внешних запросов быть не должно, в зале не будет вайфая.
+Если хоть один шрифт тянется по сети — переделывай.
+
+На каждом слайде:
+— один тезис, максимум 7 слов в заголовке;
+— не больше 25 слов основного текста;
+— если тезис это цифра, она занимает половину слайда.
+
+Режим докладчика по клавише S: текущий слайд, следующий,
+таймер с начала выступления, мои заметки.
+
+Печать в PDF через Ctrl+P — по слайду на страницу,
+без обрезаний. Проверь правила @media print отдельно,
+это ломается чаще всего.
+
+Заметки докладчика я впишу сам, оставь пустые блоки.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Один файл, листается, режим докладчика работает, шрифты действительно инлайном в base64.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Печать в PDF резала последнюю строку на трёх слайдах — правило <code class="inl">@media print</code> дописывал сам, несмотря на прямое требование в промте. Это ровно тот случай, почему я прохожу по собственным пунктам на выходе, а не считаю их выполненными по умолчанию.</p></div>
+  </article>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">3</span><h3>Тот же материал в PPTX</h3></div>
+    <p class="step-why">Организаторы собирают общий файл от трёх спикеров и правят его сами — значит нужен настоящий редактируемый PPTX, а не картинки на слайдах.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Тот же материал нужен в PPTX: организаторы собирают общий
+файл от трёх спикеров и правят его сами.
+
+Собери .pptx скриптом на python-pptx.
+— Размер 16:9, 13.333 × 7.5 дюйма.
+— Один мастер-слайд: заголовок, тело, номер страницы,
+  логотип в правом нижнем углу.
+— Каждый текст — настоящий текстовый фрейм, не картинка.
+  Организатор должен иметь возможность переписать
+  любое слово.
+— Шрифты только из стандартной поставки Office.
+  Сторонний шрифт съедет на чужом ноутбуке.
+— Заметки докладчика в notes_slide, не в теле слайда.
+
+Скрипт положи в scripts/build_deck.py, а тексты вынеси
+в отдельный data-файл: после правок я пересобираю
+презентацию одной командой, а не руками.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Скрипт и отдельный файл с текстами. Пересборка после правок — одна команда, что и было целью.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Проверял файл на чужом ноутбуке до выступления. Один раз именно на этом и горел: презентация, которая идеально выглядит у автора, у организатора разъезжается из-за шрифта.</p></div>
+    <div class="result"><span class="tag">Результат</span>Один материал живёт в четырёх носителях: лонгрид для родителей, автономный HTML для зала, редактируемый PPTX для организаторов и ручной макет в Figma там, где нужен полный контроль над версткой.</div>
+  </article>
+</section>
+
+<!-- ============ К4 ============ -->
+<section class="case" id="k4">
+  <div class="case-head"><span class="case-id">К—4</span><span class="case-kind">Промт-шаблон · поток задач</span></div>
+  <h2>Шаблон, из которого вышло больше двадцати лендингов</h2>
+  <p class="task">Когда однотипная задача приходит двадцатый раз, разовый промт — потеря времени. Я свернул его в форму: заполняю карточку клиента, правила остаются неизменными. Гардеробные системы, кофейня, флорист, детейлинг, металлоконструкции, нотариус, пекарня — один и тот же шаблон.</p>
+  <dl class="facts">
+    <dt>Примеры</dt><dd><a href="https://aristo39.com/">aristo39.com</a> — гардеробные системы и двери-купе · <a href="https://stalnoe-osnovanie.ru">stalnoe-osnovanie.ru</a> — свайно-винтовые фундаменты · <a href="https://baltmag.vercel.app">baltmag.vercel.app</a> — хозтовары и бытовая химия · <a href="https://pasteria.vercel.app">pasteria.vercel.app</a></dd>
+    <dt>Ещё</dt><dd>Crown Shine, L.A. Coffee, Точка Гриль, Нотариус, Молодость — <a href="https://github.com/SupremeGoogle">репозитории</a></dd>
+    <dt>Масштаб</dt><dd>20+ проданных сайтов, большинство клиентов пришли сами</dd>
+  </dl>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">1</span><h3>Шаблон целиком</h3></div>
+    <p class="step-why">Переменные сверху, неизменные правила снизу. Правило 3 — самое важное: оно закрывает главную беду AI-лендингов, выдуманные цифры и отзывы.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт-шаблон</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Роль: фронтендер, который собирает продающие лендинги
+малому бизнесу. Я даю карточку клиента — ты отдаёшь сайт.
+
+КАРТОЧКА КЛИЕНТА
+Бизнес:             {{НАЗВАНИЕ}}
+Ниша:               {{НИША}}
+Город:              {{ГОРОД}}
+Кто покупает:       {{АУДИТОРИЯ И В КАКОЙ МОМЕНТ}}
+Главное УТП:        {{ОДНО ПРЕДЛОЖЕНИЕ}}
+Целевое действие:   {{ЗВОНОК / ЗАЯВКА / БРОНЬ / ЗАКАЗ}}
+Обязательные блоки: {{СПИСОК}}
+Чего нельзя:        {{ЗАПРЕТЫ КЛИЕНТА}}
+Тон:                {{ПРЕМИУМ / ТЁПЛЫЙ / ДЕЛОВОЙ}}
+
+СТЕК
+React + TypeScript, Vite, Tailwind, деплой на Vercel.
+Без UI-китов и тяжёлых библиотек анимации.
+
+ПРАВИЛА, ОДИНАКОВЫЕ ДЛЯ ВСЕХ ПРОЕКТОВ
+1. Первый экран отвечает на три вопроса — что это,
+   для кого, что нажать — без скролла.
+2. Целевое действие повторяется минимум трижды
+   по странице и с мобильного достаётся одним пальцем.
+3. Ни одной цифры и ни одного отзыва, которых нет
+   в карточке. Пустой блок лучше выдуманных
+   «более 1000 довольных клиентов». Не хватает данных —
+   оставь [ДАННЫЕ КЛИЕНТА] и перечисли, что тебе нужно.
+4. Контраст текста к фону не ниже 4.5:1. Проверь каждую
+   пару и выпиши сомнительные отдельным списком.
+5. Мобильный макет основной, десктоп собираем из него.
+6. Изображения — тег picture с webp и явными width
+   и height, чтобы верстка не прыгала при загрузке.
+7. Формы: валидация на месте, человеческая ошибка,
+   состояние «отправляется», внятный текст успеха.
+
+ФОРМАТ ОТВЕТА
+Сначала структура страницы: список секций, по строке
+назначения на каждую. Жди моего «ок». Код — после.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>С заполненной карточкой структура попадает с первого раза, правки идут по мелочи. Правило 3 работает буквально: в лендинге кофейни модель вернула <code class="inl">[ДАННЫЕ КЛИЕНТА]</code> и список из четырёх вопросов вместо того, чтобы сочинить количество сортов зерна.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Копирайт первого экрана переписываю всегда — модель пишет грамотно, но безлико, и это слышно. Проверку контраста делаю сам поверх её отчёта: пару раз она объявляла 4.5 там, где реально было 3.9. Правило 6 про width и height появилось после третьего сайта, где на медленном мобильном прыгал первый экран.</p></div>
+    <div class="result"><span class="tag">Результат</span>Сборка лендинга с нуля до деплоя — часы вместо дней. Правила накапливаются: каждая новая грабля дописывается в шаблон и больше не повторяется на следующих проектах.</div>
+  </article>
+</section>
+
+<!-- ============ К5 ============ -->
+<section class="case" id="k5">
+  <div class="case-head"><span class="case-id">К—5</span><span class="case-kind">Арт-дирекшн</span></div>
+  <h2>Три дизайн-концепции до первой строки кода</h2>
+  <p class="task">Просить у модели «современный красивый сайт» — получить один усреднённый макет и потом с ним спорить. Вместо этого я беру три разных визуальных мира с жёсткой структурой описания, выбираю один и только потом отдаю его в вёрстку. Концепции сохраняются в репозитории, поэтому решение можно перепроверить позже.</p>
+  <dl class="facts">
+    <dt>Артефакт</dt><dd>Три концепции сохраняются файлом рядом с проектом, поэтому решение можно перепроверить позже: почему выбрана вторая и что было не так с первой и третьей</dd>
+  </dl>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">1</span><h3>Дизайн-исследование</h3></div>
+    <p class="step-why">Ключевое здесь — запрет на пустые прилагательные. Пока «современный» и «стильный» разрешены, модель прячет за ними отсутствие решения.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Ты арт-директор. Нужен визуальный язык для лендинга школы
+программирования для детей.
+
+Аудитория: решение принимают родители, но смотреть страницу
+будут вместе с ребёнком. Поэтому нельзя ни в детский сад,
+ни в корпоративную скуку.
+
+Дай 3 самостоятельные концепции. Не варианты одной —
+три разных мира. Каждую опиши строго по сетке, без воды:
+
+Design Movement — направление, двумя словами.
+Core Principles — 4 пункта, что делает концепцию узнаваемой.
+Color Philosophy — конкретные hex и почему именно они,
+  с привязкой к смыслу, а не «выглядит современно».
+Layout Paradigm — как устроена сетка и чем отличается
+  от обычной колонки секций.
+Signature Elements — 3 приёма, которых нет в двух других.
+Interaction Philosophy — что происходит на hover и на клик.
+Animation — 3 конкретные анимации с указанием,
+  что именно анимируется.
+Typography System — реальные шрифты с Google Fonts,
+  отдельно для заголовков и для тела.
+
+Запрещённые слова: современный, минималистичный, чистый,
+стильный, лаконичный. Если убрать их нечем — значит
+за ними ничего нет, переделывай концепцию.
+
+Ничего не верстай. Только концепции, я выберу одну.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Neo-Tokyo Brutalism — диагональные срезы и глитч на заголовках. Holographic Grid — перспективная ретро-сетка, HUD-интерфейс, Orbitron с Exo 2. Glitch Matrix — зелёный монохром, терминальные окна, дождь символов. Все три с конкретными hex и шрифтами, без единого «современного».</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Glitch Matrix отпал сразу: зелёный монохром и дождь символов родителю читаются как «взлом», а не как обучение ребёнка. У Neo-Tokyo диагональные срезы разваливались на узких экранах — это видно, только если приложить концепцию к реальной мобильной ширине. Взял Holographic Grid, но снизил насыщенность розового <code class="inl">#FF2D78</code> на кнопках: на тёмном фоне он вибрировал и белый текст на нём плыл.</p></div>
+  </article>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">2</span><h3>Вёрстка по выбранной концепции</h3></div>
+    <p class="step-why">Концепция передаётся как закон, а не как вдохновение — иначе модель по дороге подменит шрифты на «похожие», а цвета на «примерно те».</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Верстай лендинг по концепции Holographic Grid из ideas.md.
+
+Концепция — закон, а не вдохновение. Если в ней Orbitron
+и Exo 2, значит именно они, а не похожий гротеск.
+Если указан hex — используется он, а не близкий оттенок.
+
+Секции по порядку:
+1. Hero — асимметричный сплит: текст слева, изображение
+   справа, на фоне перспективная сетка.
+2. Цифры школы — счётчики, анимируются при попадании
+   в вьюпорт.
+3. Модули обучения — горизонтальный скролл карточек,
+   3D-наклон на hover.
+4. Преподаватели — фото из папки проекта, имена
+   из data-файла.
+5. Запись на пробное — имя, телефон, возраст ребёнка.
+
+Требования:
+— Все цвета через CSS-переменные. Ни одного хардкода
+  внутри компонентов.
+— Угловые L-декоры на карточках — через clip-path,
+  не картинками.
+— prefers-reduced-motion выключает все анимации,
+  включая счётчики.
+— Тексты не сочиняй. Где нужен копирайт — ставь [ТЕКСТ],
+  я напишу сам.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Вёрстка легла в концепцию точно, clip-path вместо картинок, переменные вынесены. Заглушки расставлены честно — ни одного придуманного оффера.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Все тексты писал сам: продающий текст школы модель не знает, а придуманный оффер хуже пустого места. Горизонтальный скролл карточек на iOS не отдавал инерцию. Счётчики при быстром скролле успевали запуститься дважды — повесил флаг на первый запуск.</p></div>
+  </article>
+</section>
+
+<!-- ============ К6 ============ -->
+<section class="case" id="k6">
+  <div class="case-head"><span class="case-id">К—6</span><span class="case-kind">Генерация изображений</span></div>
+  <h2>Шесть кадров, которые выглядят как один фотосет</h2>
+  <p class="task">Главная проблема AI-картинок на лендинге не в качестве кадра, а в том, что шесть кадров выглядят как шесть разных стоков. Решается общей базой промта, которая не меняется между кадрами, и списком того, что я проверяю после генерации.</p>
+  <dl class="facts">
+    <dt>Проект</dt><dd>Лендинг кофейни <a href="https://la-coffee.vercel.app">la-coffee.vercel.app</a></dd>
+    <dt>Инструменты</dt><dd><span class="fill">впиши, чем генерировал: Midjourney / Nano Banana / ChatGPT</span></dd>
+  </dl>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">1</span><h3>Общая база плюс шесть кадров</h3></div>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Шесть изображений для лендинга кофейни. Все шесть должны
+выглядеть как один фотосет, снятый в один день
+одним человеком.
+
+ОБЩАЯ БАЗА — не меняется между кадрами:
+snapshot on 35mm film, natural window light from the left,
+warm amber and deep brown palette, shallow depth of field,
+slight grain, no text, no logos, no brand marks,
+nobody looking at the camera
+
+КАДРЫ:
+1. витрина с выпечкой, сверху под углом 45°
+2. руки бариста наливают молоко в чашку, крупный план
+3. столик у окна, две чашки и раскрытая книга, утро
+4. мешок зерна и ручная кофемолка на деревянной стойке
+5. пустой зал перед открытием, стулья ещё на столах
+6. вынос стакана на улицу, размытый фасад за спиной
+
+Соотношение 3:2 для всех, кроме кадра 6 — там 4:5,
+он идёт в мобильный блок.
+
+ЧТО ПРОВЕРЯЮ ПОСЛЕ ГЕНЕРАЦИИ И ОТПРАВЛЯЮ НА ПЕРЕДЕЛКУ:
+— количество и форма пальцев на кадре 2;
+— читаемые буквы на упаковке — их быть не должно;
+— одинаковая температура света во всех шести кадрах;
+— повторяющаяся мебель и посуда: это одно заведение,
+  а не шесть разных.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Пять кадров из шести с первого прохода легли в один свет. Кадр 5 с пустым залом вышел заметно холоднее остальных.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Кадр 2 переделывал трижды — пальцы. Кадр 5 догонял по температуре в редакторе, проще было довести, чем перегенерировать. На двух кадрах на упаковке проступали псевдобуквы: с расстояния незаметно, на ретине читается как брак, зачищал вручную. Все шесть пережимал в webp перед выкладкой.</p></div>
+  </article>
+</section>
+
+<!-- ============ К7 ============ -->
+<section class="case" id="k7">
+  <div class="case-head"><span class="case-id">К—7</span><span class="case-kind">Генерация видео</span></div>
+  <h2>Восьмисекундный луп под заголовок</h2>
+  <p class="task">Видео в шапке лендинга — не самостоятельный ролик, а подложка под текст. Значит у него есть требования, которых нет у обычного видеопромта: сходящиеся первый и последний кадр, спокойная середина под заголовок и вес, который не убьёт загрузку с мобильного.</p>
+  <dl class="facts">
+    <dt>Инструменты</dt><dd>Higgsfield, Arena AI</dd>
+    <dt>Пример работы</dt><dd><a href="https://disk.yandex.ru/i/R_3IiO0yjzHifA">disk.yandex.ru/i/R_3IiO0yjzHifA</a></dd>
+    <dt>Проект</dt><dd>Детейлинг-студия Crown Shine — <a href="https://github.com/SupremeGoogle/CROWN-SHINE">репозиторий</a></dd>
+  </dl>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">1</span><h3>Промт с техническими рамками</h3></div>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Ролик 8 секунд для шапки лендинга детейлинг-студии.
+Идёт фоном под заголовок, без звука, зациклен —
+первый и последний кадр должны сходиться.
+
+ГЕНЕРАЦИЯ:
+slow dolly along the side of a black car in a dark studio,
+a single soft light strip travels across the wet clear coat,
+water beads catching the light, deep reflections,
+no people, no visible logos, no text, cinematic, 24fps
+
+ТРЕБОВАНИЯ К РЕЗУЛЬТАТУ:
+— ровно 8 секунд, движение равномерное, без рывка в конце;
+— центр кадра остаётся спокойным и тёмным: поверх ляжет
+  белый заголовок, ему нужен ровный участок;
+— после сжатия не тяжелее 2 МБ, иначе мобильный будет
+  грузить шапку дольше, чем читать её.
+
+ОТПРАВЛЯЮ НА ПЕРЕДЕЛКУ, ЕСЛИ:
+— блик проходит через центр — он съедает заголовок;
+— в отражении появляется силуэт человека или камеры;
+— на стыке петли заметен скачок.</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Со второй попытки блик ушёл из центра. Петля сошлась не идеально, но на тёмном материале стык не читается.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Резал последние кадры, чтобы петля сошлась чище, и жал под 2 МБ. Отдельно проверял, что с выключенным автоплеем заголовок остаётся читаемым на статичном постере: видео не должно быть единственным условием читаемости текста.</p></div>
+  </article>
+</section>
+
+<!-- ============ К8 ============ -->
+<section class="case" id="k8">
+  <div class="case-head"><span class="case-id">К—8</span><span class="case-kind">Telegram-бот · CRM</span></div>
+  <h2>Бот, который не теряет источник лида</h2>
+  <p class="task">Заявки приходят из нескольких каналов, и вопрос всегда один: какой канал приносит запись, а не клик. Бот забирает метку источника из ссылки, тащит её до карточки сделки в CRM и складывает туда, откуда её потом можно посчитать.</p>
+  <dl class="facts">
+    <dt>Боты</dt><dd>@kiberoneKLD_bot · @AZTmoto_bot · @Dreamcars39_bot · @veri_x_bot · @KIBERoneVisor_bot</dd>
+    <dt>Интеграция</dt><dd>Вебхук CRM — <a href="https://github.com/SupremeGoogle/s20-webhook">github.com/SupremeGoogle/s20-webhook</a></dd>
+    <dt>Стек</dt><dd>Python, aiogram, FSM, PostgreSQL, Flask на приёме вебхуков</dd>
+  </dl>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">1</span><h3>Постановка задачи боту</h3></div>
+    <p class="step-why">Требования сформулированы от метрики, а не от функции: не «сделай рассылку», а «чтобы можно было посчитать, какой канал приносит запись».</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Нужен телеграм-бот, который принимает поток заявок
+из рекламы и не теряет источник.
+
+ЧТО ДОЛЖЕН УМЕТЬ:
+1. Ловить /start с параметром: t.me/bot?start=vk_march —
+   всё после start это метка источника. Сохранять её
+   в карточку лида до первого сообщения человека,
+   иначе метка теряется на тех, кто ушёл после /start.
+2. Вести короткий диалог: имя, телефон, возраст ребёнка,
+   удобное время. По одному вопросу за раз, с кнопкой
+   «назад» на каждом шаге.
+3. Создавать сделку в CRM через вебхук и класть метку
+   источника в отдельное поле, чтобы потом посчитать,
+   какой канал приносит запись, а не клики.
+4. Рассылка по сегменту, а не всем подряд: фильтр
+   по источнику, по статусу сделки, по факту пробного.
+
+ТЕХНИЧЕСКИЕ РАМКИ:
+— Python, aiogram 3, состояния через FSM,
+  хранилище PostgreSQL.
+— Ключ CRM только из переменных окружения.
+  В коде его быть не должно ни в каком виде.
+— Вебхук CRM отвечает не мгновенно и иногда таймаутит.
+  Любой запрос к нему — с ретраем и бэкоффом.
+  Лид не должен теряться из-за одного таймаута.
+— Рассылка с паузой между отправками, чтобы не словить
+  лимит Telegram, и с логом: кому ушло, кому нет и почему.
+
+Сначала опиши схему БД и граф состояний диалога.
+Код — после моего «ок».</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Схема БД и граф состояний с первого раза. По ним сразу было видно, что шаг «возраст ребёнка» не имеет выхода назад — и это чинилось на схеме, а не в коде.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Тексты вопросов бота переписывал полностью: модель формулирует вежливо и длинно, а в боте лишняя строка — это лишний экран на телефоне. Ретраи проверял, специально роняя вебхук: без такой проверки нельзя утверждать, что лид не теряется.</p></div>
+    <div class="result"><span class="tag">Результат</span>Больше десяти ботов в проде под разные бизнесы: запись, каталог, бронирование, рассылки, мониторинг чатов. Источник лида доходит до CRM и участвует в отчёте.</div>
+  </article>
+</section>
+
+<!-- ============ К9 ============ -->
+<section class="case" id="k9">
+  <div class="case-head"><span class="case-id">К—9</span><span class="case-kind">Лид-магнит · контент</span></div>
+  <h2>Конспект мастер-класса как лид-магнит</h2>
+  <p class="task">После мастер-класса по ИИ остались рукописные конспекты. Из них собран сайт, который участники сохраняют в закладки, а неучастники читают целиком. Ключевой запрет в промте — ничего не добавлять от себя: конспект, в который ИИ дописал то, чего на встрече не было, обесценивает материал.</p>
+  <dl class="facts">
+    <dt>Сайт</dt><dd><a href="https://konspekt-three.vercel.app">konspekt-three.vercel.app</a></dd>
+    <dt>Код</dt><dd><a href="https://github.com/SupremeGoogle/Konspekt">github.com/SupremeGoogle/Konspekt</a></dd>
+    <dt>Стек</dt><dd>React 19, TypeScript, Tailwind, Framer Motion, Vercel</dd>
+  </dl>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">1</span><h3>Промт с запретом достраивать</h3></div>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>После мастер-класса по ИИ у меня остались конспекты
+и презентация. Нужно превратить их в сайт-конспект, который
+участники сохранят, а неучастники прочитают целиком.
+
+ВХОД: текст конспекта ниже.
+Ничего не добавляй от себя. Если чего-то нет в конспекте —
+значит на мастер-классе этого не было. Дописанный тобой
+раздел обесценивает весь материал.
+Видишь пробел в логике — не заполняй его, вынеси
+отдельным списком «здесь не хватает».
+
+ЧТО СДЕЛАТЬ:
+1. Разложи материал по разделам так, чтобы человек,
+   который не был на встрече, понял последовательность.
+2. Собери сайт: React, Tailwind, появление секций через
+   Framer Motion — но сдержанно, это конспект,
+   а не промостраница.
+3. Слева оглавление: подсвечивает текущий раздел
+   при скролле, на мобильном превращается в шторку.
+4. У каждого раздела свой якорь в адресе, чтобы можно
+   было кинуть ссылку на конкретный кусок.
+5. Код и промты внутри конспекта — в блоках
+   с кнопкой копирования.
+
+ЧЕГО НЕ ДЕЛАТЬ:
+Не превращай конспект в лендинг. Никаких призывов,
+форм и «запишитесь на курс».
+
+[КОНСПЕКТ]</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Структура собралась по материалу, плюс список из шести пробелов — мест, где мой конспект действительно обрывался. Этот список оказался полезнее самого сайта: по нему я дописал недостающее сам.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Дописывал пробелы своими словами, а не просил модель их закрыть. Анимации срезал: появление стояло на каждом абзаце, для длинного текста это утомляет — оставил только на заголовках разделов.</p></div>
+  </article>
+</section>
+
+<!-- ============ К10 ============ -->
+<section class="case" id="k10">
+  <div class="case-head"><span class="case-id">К—10</span><span class="case-kind">Продукт под событие</span></div>
+  <h2>Свадебная фотогалерея в реальном времени</h2>
+  <p class="task">Не лендинг, а работающий продукт на один вечер. Гости снимают на телефоны и загружают кадры прямо со свадьбы, всё стекается в общую ленту, которую видят все. После праздника молодожёны забирают весь архив одним файлом. Половина гостей открывает сайт по QR-коду со стола и видит его впервые в жизни — значит ни регистрации, ни приложений, ни настроек.</p>
+  <dl class="facts">
+    <dt>Сайт</dt><dd><a href="https://ruslan-marina.vercel.app">ruslan-marina.vercel.app</a></dd>
+    <dt>Код</dt><dd><a href="https://github.com/SupremeGoogle/Ruslan-Marina">github.com/SupremeGoogle/Ruslan-Marina</a></dd>
+    <dt>Стек</dt><dd>Next.js 16, React 19, TypeScript, Supabase — хранилище и база, jszip — сборка архива, тесты на Vitest</dd>
+  </dl>
+
+  <article class="step">
+    <div class="step-head"><span class="step-n">1</span><h3>Постановка от условий зала, а не от макета</h3></div>
+    <p class="step-why">Всё, что решает судьбу такого проекта, лежит вне дизайна: плохой интернет в банкетном зале, снимки по десять мегабайт с телефонов и недоступность Supabase из России. Эти три вещи и стоят в промте выше всего остального.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
+<pre><code>Нужен сайт-галерея для свадьбы. Гости снимают на телефоны
+и загружают кадры прямо во время праздника, всё стекается
+в общую ленту. После свадьбы молодожёны забирают весь архив
+одним файлом.
+
+Аудитория: гости от 18 до 70 лет. Половина откроет ссылку
+по QR-коду со стола и увидит сайт впервые. Ни регистрации,
+ни установки приложений быть не может.
+
+СТЕК: Next.js, TypeScript, Supabase — хранилище файлов
+и база. Деплой на Vercel.
+
+ЧТО НУЖНО:
+1. Вход: гость вводит только имя, оно запоминается
+   на устройстве. Никаких паролей и почты.
+2. Загрузка: несколько фото за раз, с превью и прогрессом.
+   Кадр появляется в общей ленте сразу.
+3. Лента: сетка, ленивая подгрузка, скелетоны вместо
+   прыгающей вёрстки.
+4. Раздел для молодожёнов: собрать архив всех фотографий
+   и скачать одним zip.
+
+ОГРАНИЧЕНИЯ, КОТОРЫЕ ВАЖНЕЕ КРАСОТЫ:
+— Работает на плохом мобильном интернете в банкетном зале.
+  Загрузка не должна отваливаться молча: упало — покажи,
+  что именно упало, и дай повторить.
+— Телефон гостя отдаёт снимки по 5–10 МБ. Сжимай
+  на клиенте до отправки, иначе зал положит канал.
+— Прямые запросы к Supabase из России не проходят.
+  Весь трафик к нему веди через собственные роуты
+  на Vercel: гость не должен ничего настраивать
+  и не должен видеть пустой экран.
+— Гость может удалить только своё фото. Чужие —
+  никогда, даже случайно.
+
+Сначала схема таблиц и список роутов. Код после моего «ок».</code></pre></div>
+    <div class="outcome ai"><span class="tag">Что выдала модель</span><p>Схема, роуты и рабочая загрузка. Прокси к Supabase через собственные роуты собрался ровно так, как просил, — без этого пункта сайт открывался бы пустым у большей части гостей.</p></div>
+    <div class="outcome hand"><span class="tag">Что правил руками</span><p>Ошибки Supabase первая версия глотала и показывала общее «что-то пошло не так» — переписал так, чтобы наверх поднималась настоящая причина, иначе отладить загрузку в чужом зале невозможно. Ленту перевёл на next/image со скелетонами: на сетке из сотен фотографий верстка прыгала. Отдельно укрепил сборку архива — на большом количестве файлов запрос отваливался по таймауту.</p></div>
+    <div class="result"><span class="tag">Результат</span>Гости загружали фотографии весь вечер с обычных телефонов, без единой установки и настройки. Молодожёны забрали архив одним файлом.</div>
+  </article>
+</section>
+
+<section class="checklist">
+  <h2>Что я проверяю в любом AI-выводе</h2>
+  <p class="section-note">Один и тот же прогон по любому результату — страница, презентация, картинка, текст. Занимает минут пятнадцать и ловит почти всё.</p>
+  <ul class="checks">
+    <li><span class="box"></span><span><b>Цифры и факты.</b> Каждое число и утверждение — против источника. Чего нет в исходных данных, того нет на странице.</span></li>
+    <li><span class="box"></span><span><b>Пункты собственного промта.</b> Прохожу по своим же требованиям и проверяю каждое. Выполненными оказываются не все — кейсы 1 и 3 тому примеры.</span></li>
+    <li><span class="box"></span><span><b>Персональные данные.</b> Куда они попадают и кто их увидит. Именно так в кейсе 1 из QR-кода ушли имя и телефон участника.</span></li>
+    <li><span class="box"></span><span><b>Телефон, а не узкое окно браузера.</b> Открываю на реальном устройстве: инерция скролла, зона нажатия, поведение клавиатуры в формах.</span></li>
+    <li><span class="box"></span><span><b>Консоль и сборка.</b> Ноль ошибок в консоли при обычном сценарии, lint и build проходят.</span></li>
+    <li><span class="box"></span><span><b>Контраст.</b> Считаю сам, а не верю отчёту модели.</span></li>
+    <li><span class="box"></span><span><b>Текст на слух.</b> Всё, что звучит как ИИ, переписываю. Продающий текст пишу сам всегда.</span></li>
+    <li><span class="box"></span><span><b>Каждая ссылка.</b> Кликаю все до одной. Придуманный URL, который не падает на сборке, — самая частая тихая ошибка.</span></li>
+    <li><span class="box"></span><span><b>Чужое устройство.</b> Презентации и файлы открываю не там, где делал.</span></li>
+  </ul>
+</section>
+
+<footer>
+  <span>Гафаров Акбар Маруфович · Калининград</span>
+  <span><a href="https://t.me/supremeHn">t.me/supremeHn</a> · <a href="mailto:gafarovakbar@mail.ru">gafarovakbar@mail.ru</a></span>
+</footer>
+
+</div>
+
+<script>
+document.querySelectorAll('.prompt').forEach(function(box){
+  var btn = box.querySelector('.copy');
+  var code = box.querySelector('code');
+  if(!btn || !code) return;
+  btn.addEventListener('click', function(){
+    var text = code.textContent;
+    var done = function(){
+      btn.textContent = 'Скопировано';
+      setTimeout(function(){ btn.textContent = 'Копировать'; }, 1600);
+    };
+    var fail = function(){
+      btn.textContent = 'Выделите вручную';
+      setTimeout(function(){ btn.textContent = 'Копировать'; }, 2000);
+    };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(done).catch(fail);
+    } else { fail(); }
+  });
+});
+</script>
+</body>
+</html>

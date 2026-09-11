@@ -2,8 +2,8 @@
 
 **Кейс 7 · шаг 1 — Промт с запретом достраивать**
 
-- **Сайт:** [konspekt-three.vercel.app](https://konspekt-three.vercel.app)
-- **Код:** [github.com/SupremeGoogle/Konspekt](https://github.com/SupremeGoogle/Konspekt)
+- **Сайт:** [https://konspekt-three.vercel.app](https://konspekt-three.vercel.app)
+- **Код:** [https://github.com/SupremeGoogle/Konspekt](https://github.com/SupremeGoogle/Konspekt)
 - **Стек:** React 19, TypeScript, Vite, Tailwind, Framer Motion, lucide-react, Vercel
 
 ## Промт

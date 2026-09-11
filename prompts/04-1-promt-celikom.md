@@ -2,9 +2,9 @@
 
 **Кейс 3 · шаг 1 — Промт целиком**
 
-- **Сайт:** [aristo39.com](https://aristo39.com/)
+- **Сайт:** [https://aristo39.com](https://aristo39.com/)
 - **Стек:** React + TypeScript, Vite, Tailwind, деплой на Vercel
-- **Ещё по тому же своду правил:** [stalnoe-osnovanie.ru](https://stalnoe-osnovanie.ru) · [baltmag.vercel.app](https://baltmag.vercel.app) · [pasteria.vercel.app](https://pasteria.vercel.app) · Crown Shine, L.A. Coffee, Точка Гриль, Нотариус — [репозитории](https://github.com/SupremeGoogle)
+- **Ещё по тому же своду правил:** [https://stalnoe-osnovanie.ru](https://stalnoe-osnovanie.ru) · [https://baltmag.vercel.app](https://baltmag.vercel.app) · Точка Гриль, Нотариус, Молодость — [https://github.com/SupremeGoogle](https://github.com/SupremeGoogle)
 - **Масштаб:** 20+ коммерческих сайтов на одном и том же своде правил
 
 ## Промт

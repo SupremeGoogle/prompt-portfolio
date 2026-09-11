@@ -15,8 +15,8 @@ AI-креатор, вайбкодер. Калининград.
 
 *Мероприятие под ключ · Codex*
 
-- **Лендинг:** [kiberone.vercel.app](https://kiberone.vercel.app/)
-- **Код:** [github.com/SupremeGoogle/KIBERone](https://github.com/SupremeGoogle/KIBERone)
+- **Лендинг:** [https://kiberone.vercel.app](https://kiberone.vercel.app/)
+- **Код:** [https://github.com/SupremeGoogle/KIBERone](https://github.com/SupremeGoogle/KIBERone)
 - **Стек:** React 19 + TypeScript, Vite, Tailwind, react-router-dom 7. Supabase — база и realtime, qrcode.react — генерация QR, @yudiel/react-qr-scanner — сканер, EmailJS — письма, jsPDF + html2canvas — PDF-билет, motion — анимации
 - **Инструмент:** Codex
 
@@ -30,7 +30,7 @@ AI-креатор, вайбкодер. Калининград.
 
 *Мини-игра · ежедневная роутина*
 
-- **Код:** [github.com/SupremeGoogle/GuessWhat](https://github.com/SupremeGoogle/GuessWhat) — бэклог, история агента и оператор лежат прямо в репозитории
+- **Код:** [https://github.com/SupremeGoogle/GuessWhat](https://github.com/SupremeGoogle/GuessWhat) — бэклог, история агента и оператор лежат прямо в репозитории
 - **Стек:** React 18 + TypeScript strict, Vite 6, чистый CSS на переменных, lucide-react, Web Audio API, canvas-confetti
 - **Инструмент:** Claude, ежедневная роутина
 
@@ -46,9 +46,9 @@ AI-креатор, вайбкодер. Калининград.
 
 *Коммерческий лендинг*
 
-- **Сайт:** [aristo39.com](https://aristo39.com/)
+- **Сайт:** [https://aristo39.com](https://aristo39.com/)
 - **Стек:** React + TypeScript, Vite, Tailwind, деплой на Vercel
-- **Ещё по тому же своду правил:** [stalnoe-osnovanie.ru](https://stalnoe-osnovanie.ru) · [baltmag.vercel.app](https://baltmag.vercel.app) · [pasteria.vercel.app](https://pasteria.vercel.app) · Crown Shine, L.A. Coffee, Точка Гриль, Нотариус — [репозитории](https://github.com/SupremeGoogle)
+- **Ещё по тому же своду правил:** [https://stalnoe-osnovanie.ru](https://stalnoe-osnovanie.ru) · [https://baltmag.vercel.app](https://baltmag.vercel.app) · Точка Гриль, Нотариус, Молодость — [https://github.com/SupremeGoogle](https://github.com/SupremeGoogle)
 - **Масштаб:** 20+ коммерческих сайтов на одном и том же своде правил
 
 **Промты:**
@@ -70,8 +70,9 @@ AI-креатор, вайбкодер. Калининград.
 
 *Генерация изображений*
 
-- **Проект:** Лендинг кофейни [la-coffee.vercel.app](https://la-coffee.vercel.app)
-- **Задача:** Шесть кадров одного фотосета для первого экрана и блока «о нас»
+- **Проект:** [https://crown-shine.vercel.app](https://crown-shine.vercel.app) — студия детейлинга, рынок США
+- **Код:** [https://github.com/SupremeGoogle/CROWN-SHINE](https://github.com/SupremeGoogle/CROWN-SHINE)
+- **Задача:** Шесть кадров одного фотосета для первого экрана, галереи работ и блока услуг
 
 **Промты:**
 
@@ -81,7 +82,7 @@ AI-креатор, вайбкодер. Калининград.
 
 *Telegram-боты · CRM*
 
-- **Боты:** [t.me/kiberoneKLD_bot](https://t.me/kiberoneKLD_bot) · [t.me/veri_x_bot](https://t.me/veri_x_bot) · [t.me/AZTmoto_bot](https://t.me/AZTmoto_bot)
+- **Боты:** [https://t.me/kiberoneKLD_bot](https://t.me/kiberoneKLD_bot) · [https://t.me/veri_x_bot](https://t.me/veri_x_bot) · [https://t.me/AZTmoto_bot](https://t.me/AZTmoto_bot)
 - **Стек:** Python, aiogram 3 с FSM, PostgreSQL, Flask на приёме вебхуков, REST API CRM с ключом в заголовке
 
 **Промты:**
@@ -92,8 +93,8 @@ AI-креатор, вайбкодер. Калининград.
 
 *Лид-магнит · контент*
 
-- **Сайт:** [konspekt-three.vercel.app](https://konspekt-three.vercel.app)
-- **Код:** [github.com/SupremeGoogle/Konspekt](https://github.com/SupremeGoogle/Konspekt)
+- **Сайт:** [https://konspekt-three.vercel.app](https://konspekt-three.vercel.app)
+- **Код:** [https://github.com/SupremeGoogle/Konspekt](https://github.com/SupremeGoogle/Konspekt)
 - **Стек:** React 19, TypeScript, Vite, Tailwind, Framer Motion, lucide-react, Vercel
 
 **Промты:**
@@ -104,8 +105,8 @@ AI-креатор, вайбкодер. Калининград.
 
 *Продукт под событие · Next.js*
 
-- **Сайт:** [ruslan-marina.vercel.app](https://ruslan-marina.vercel.app)
-- **Код:** [github.com/SupremeGoogle/Ruslan-Marina](https://github.com/SupremeGoogle/Ruslan-Marina)
+- **Сайт:** [https://ruslan-marina.vercel.app](https://ruslan-marina.vercel.app)
+- **Код:** [https://github.com/SupremeGoogle/Ruslan-Marina](https://github.com/SupremeGoogle/Ruslan-Marina)
 - **Стек:** Next.js 16, React 19, TypeScript. Supabase — база и хранилище, jszip — архив, canvas-confetti, Vitest с покрытием — тесты API-роутов и хелперов. Шрифты Great Vibes, Alex Brush, Marck Script для кириллицы
 
 **Промты:**

@@ -2,8 +2,8 @@
 
 **Кейс 1 · шаг 1 — Схема данных и лендинг с регистрацией**
 
-- **Лендинг:** [kiberone.vercel.app](https://kiberone.vercel.app/)
-- **Код:** [github.com/SupremeGoogle/KIBERone](https://github.com/SupremeGoogle/KIBERone)
+- **Лендинг:** [https://kiberone.vercel.app](https://kiberone.vercel.app/)
+- **Код:** [https://github.com/SupremeGoogle/KIBERone](https://github.com/SupremeGoogle/KIBERone)
 - **Стек:** React 19 + TypeScript, Vite, Tailwind, react-router-dom 7. Supabase — база и realtime, qrcode.react — генерация QR, @yudiel/react-qr-scanner — сканер, EmailJS — письма, jsPDF + html2canvas — PDF-билет, motion — анимации
 - **Инструмент:** Codex
 

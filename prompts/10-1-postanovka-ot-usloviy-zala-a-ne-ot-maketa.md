@@ -2,8 +2,8 @@
 
 **Кейс 8 · шаг 1 — Постановка от условий зала, а не от макета**
 
-- **Сайт:** [ruslan-marina.vercel.app](https://ruslan-marina.vercel.app)
-- **Код:** [github.com/SupremeGoogle/Ruslan-Marina](https://github.com/SupremeGoogle/Ruslan-Marina)
+- **Сайт:** [https://ruslan-marina.vercel.app](https://ruslan-marina.vercel.app)
+- **Код:** [https://github.com/SupremeGoogle/Ruslan-Marina](https://github.com/SupremeGoogle/Ruslan-Marina)
 - **Стек:** Next.js 16, React 19, TypeScript. Supabase — база и хранилище, jszip — архив, canvas-confetti, Vitest с покрытием — тесты API-роутов и хелперов. Шрифты Great Vibes, Alex Brush, Marck Script для кириллицы
 
 ## Промт

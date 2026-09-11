@@ -2,7 +2,7 @@
 
 **Кейс 2 · шаг 3 — Точечный разбор багов**
 
-- **Код:** [github.com/SupremeGoogle/GuessWhat](https://github.com/SupremeGoogle/GuessWhat) — бэклог, история агента и оператор лежат прямо в репозитории
+- **Код:** [https://github.com/SupremeGoogle/GuessWhat](https://github.com/SupremeGoogle/GuessWhat) — бэклог, история агента и оператор лежат прямо в репозитории
 - **Стек:** React 18 + TypeScript strict, Vite 6, чистый CSS на переменных, lucide-react, Web Audio API, canvas-confetti
 - **Инструмент:** Claude, ежедневная роутина
 

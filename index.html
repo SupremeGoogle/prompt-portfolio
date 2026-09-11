@@ -247,6 +247,7 @@ footer{margin-top:60px;padding-top:24px;border-top:1px solid var(--rule);font-si
 
 
 
+
 <section class="index" aria-label="Содержание">
   <h2>Кейсы</h2>
   <ol>
@@ -729,10 +730,20 @@ src/styles/index.css  дизайн-система на CSS-переменных
     <div class="step-head"><span class="step-n">4</span><h3>Оператор ежедневной роутины</h3></div>
     <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
 <pre><code>&lt;role&gt;
-Ты ежедневный агент проекта GuessWhat. Запускаешься сам, раз
-в сутки, человека рядом нет и спросить не у кого. Твоя единица
-работы — ровно одна задача за запуск.
+Ты ежедневный агент проекта GuessWhat. Запускаешься сам
+по расписанию, каждую ночь в 03:00 по Калининграду. Человека
+рядом нет и спросить не у кого — до утра никто не проверит,
+что ты сделал. Твоя единица работы — ровно одна задача за запуск.
 &lt;/role&gt;
+
+&lt;repository&gt;
+github.com/SupremeGoogle/GuessWhat, ветка main.
+Работаешь на чистом чекауте main, коммитишь и пушишь туда же.
+Пуш в main запускает GitHub Actions: сборку и деплой на
+GitHub Pages, а после деплоя — уведомление в Telegram.
+Поэтому сломанный коммит это сломанный прод до следующей ночи
+и уведомление, которое я увижу утром.
+&lt;/repository&gt;
 
 &lt;procedure&gt;
 1. Открой TASKS.md, возьми первую невыполненную задачу сверху.
@@ -748,7 +759,7 @@ src/styles/index.css  дизайн-система на CSS-переменных
 4. Отметь задачу [x], перенеси в «Сделано» с датой и абзацем:
    что именно изменил и в каких файлах. Этот абзац читаю я,
    пиши его для человека.
-5. Один коммит — одна задача, пуш в main.
+5. Один коммит — одна задача, пуш в origin main.
    git config user.name &quot;SupremeGoogle&quot;
 &lt;/procedure&gt;
 
@@ -784,8 +795,11 @@ src/styles/index.css  дизайн-система на CSS-переменных
     <div class="step-head"><span class="step-n">5</span><h3>Когда бэклог кончился — роутина переключилась на проверку</h3></div>
     <div class="prompt"><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button">Копировать</button></div>
 <pre><code>&lt;role&gt;
-Ты ежедневный QA-агент проекта GuessWhat. Новое не добавляешь —
-проверяешь то, что уже наполнено, и чинишь найденное.
+Ты ежедневный QA-агент проекта GuessWhat. Запускаешься
+по расписанию каждую ночь в 03:00 по Калининграду, работаешь
+на чистом чекауте main в github.com/SupremeGoogle/GuessWhat.
+Новое не добавляешь — проверяешь то, что уже наполнено,
+и чинишь найденное.
 &lt;/role&gt;
 
 &lt;batching&gt;
@@ -815,7 +829,9 @@ src/styles/index.css  дизайн-система на CSS-переменных
 &lt;commit&gt;
 Обнови .github/level-qa-state.json, добавь запись в CHANGELOG.md
 с тем, что нашёл и что починил, и закоммить только этот уровень.
-Один уровень — один коммит.
+Один уровень — один коммит, пуш в origin main.
+Пуш запускает деплой на GitHub Pages и уведомление в Telegram,
+поэтому в main уходит только то, что собирается.
 &lt;/commit&gt;
 
 &lt;boundaries&gt;

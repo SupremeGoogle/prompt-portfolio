@@ -1,6 +1,6 @@
 # Свадебная фотогалерея в реальном времени
 
-**Кейс 10 · шаг 2 — Вход, который не выглядит как форма**
+**Кейс 8 · шаг 2 — Вход, который не выглядит как форма**
 
 - **Сайт:** [ruslan-marina.vercel.app](https://ruslan-marina.vercel.app)
 - **Код:** [github.com/SupremeGoogle/Ruslan-Marina](https://github.com/SupremeGoogle/Ruslan-Marina)

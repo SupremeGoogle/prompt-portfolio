@@ -1,6 +1,6 @@
 # Шаблон, из которого вышло больше двадцати лендингов
 
-**Кейс 4 · шаг 1 — Шаблон целиком**
+**Кейс 3 · шаг 1 — Шаблон целиком**
 
 - **Примеры:** [aristo39.com](https://aristo39.com/) — гардеробные системы и двери-купе · [stalnoe-osnovanie.ru](https://stalnoe-osnovanie.ru) — свайно-винтовые фундаменты · [baltmag.vercel.app](https://baltmag.vercel.app) — хозтовары и бытовая химия · [pasteria.vercel.app](https://pasteria.vercel.app)
 - **Ещё:** Crown Shine, L.A. Coffee, Точка Гриль, Нотариус, Молодость — [репозитории](https://github.com/SupremeGoogle)

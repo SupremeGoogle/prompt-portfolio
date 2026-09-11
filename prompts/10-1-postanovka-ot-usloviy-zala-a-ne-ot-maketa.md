@@ -1,6 +1,6 @@
 # Свадебная фотогалерея в реальном времени
 
-**Кейс 10 · шаг 1 — Постановка от условий зала, а не от макета**
+**Кейс 8 · шаг 1 — Постановка от условий зала, а не от макета**
 
 - **Сайт:** [ruslan-marina.vercel.app](https://ruslan-marina.vercel.app)
 - **Код:** [github.com/SupremeGoogle/Ruslan-Marina](https://github.com/SupremeGoogle/Ruslan-Marina)

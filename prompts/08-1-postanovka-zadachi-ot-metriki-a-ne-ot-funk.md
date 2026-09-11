@@ -1,6 +1,6 @@
 # Бот, который не теряет источник лида
 
-**Кейс 8 · шаг 1 — Постановка задачи от метрики, а не от функции**
+**Кейс 6 · шаг 1 — Постановка задачи от метрики, а не от функции**
 
 - **Боты:** [t.me/kiberoneKLD_bot](https://t.me/kiberoneKLD_bot) · [t.me/veri_x_bot](https://t.me/veri_x_bot) · [t.me/AZTmoto_bot](https://t.me/AZTmoto_bot)
 - **Стек:** Python, aiogram 3 с FSM, PostgreSQL, Flask на приёме вебхуков, REST API CRM с ключом в заголовке

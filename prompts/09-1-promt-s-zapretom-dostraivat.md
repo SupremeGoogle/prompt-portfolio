@@ -1,6 +1,6 @@
 # Конспект мастер-класса как лид-магнит
 
-**Кейс 9 · шаг 1 — Промт с запретом достраивать**
+**Кейс 7 · шаг 1 — Промт с запретом достраивать**
 
 - **Сайт:** [konspekt-three.vercel.app](https://konspekt-three.vercel.app)
 - **Код:** [github.com/SupremeGoogle/Konspekt](https://github.com/SupremeGoogle/Konspekt)

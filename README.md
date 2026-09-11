@@ -42,17 +42,18 @@ AI-креатор, вайбкодер. Калининград.
 - [Оператор ежедневной роутины](prompts/02-4-operator-ezhednevnoy-routiny.md)
 - [Когда бэклог кончился — роутина переключилась на проверку](prompts/02-5-kogda-beklog-konchilsya-routina-pereklyuch.md)
 
-## 3. Шаблон, из которого вышло больше двадцати лендингов
+## 3. Лендинг производителя гардеробных систем
 
-*Промт-шаблон · поток задач*
+*Коммерческий лендинг*
 
-- **Примеры:** [aristo39.com](https://aristo39.com/) — гардеробные системы и двери-купе · [stalnoe-osnovanie.ru](https://stalnoe-osnovanie.ru) — свайно-винтовые фундаменты · [baltmag.vercel.app](https://baltmag.vercel.app) — хозтовары и бытовая химия · [pasteria.vercel.app](https://pasteria.vercel.app)
-- **Ещё:** Crown Shine, L.A. Coffee, Точка Гриль, Нотариус, Молодость — [репозитории](https://github.com/SupremeGoogle)
-- **Масштаб:** 20+ проданных сайтов, большинство клиентов пришли сами
+- **Сайт:** [aristo39.com](https://aristo39.com/)
+- **Стек:** React + TypeScript, Vite, Tailwind, деплой на Vercel
+- **Ещё по тому же своду правил:** [stalnoe-osnovanie.ru](https://stalnoe-osnovanie.ru) · [baltmag.vercel.app](https://baltmag.vercel.app) · [pasteria.vercel.app](https://pasteria.vercel.app) · Crown Shine, L.A. Coffee, Точка Гриль, Нотариус — [репозитории](https://github.com/SupremeGoogle)
+- **Масштаб:** 20+ коммерческих сайтов на одном и том же своде правил
 
 **Промты:**
 
-- [Шаблон целиком](prompts/04-1-shablon-celikom.md)
+- [Промт целиком](prompts/04-1-promt-celikom.md)
 
 ## 4. Три дизайн-концепции до первой строки кода
 

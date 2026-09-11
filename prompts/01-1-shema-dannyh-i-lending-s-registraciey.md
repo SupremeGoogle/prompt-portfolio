@@ -143,4 +143,4 @@ src/lib/utils.ts             хелперы
 
 ---
 
-[← оглавление](../README.md)
+[https://github.com/SupremeGoogle/prompt-portfolio](https://github.com/SupremeGoogle/prompt-portfolio)

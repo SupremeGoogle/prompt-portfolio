@@ -6,7 +6,7 @@ AI-креатор, вайбкодер. Калининград.
 
 Каждый промт лежит отдельным файлом: название проекта, стек и промт целиком.
 
-- [Три дизайн-концепции — вывод модели целиком](artifacts/design-concepts.md)
+- Три дизайн-концепции, вывод модели целиком: https://github.com/SupremeGoogle/prompt-portfolio/blob/main/artifacts/design-concepts.md
 - Портфолио: https://cv-akbar.vercel.app
 
 ---
@@ -22,9 +22,9 @@ AI-креатор, вайбкодер. Калининград.
 
 **Промты:**
 
-- [Схема данных и лендинг с регистрацией](prompts/01-1-shema-dannyh-i-lending-s-registraciey.md)
-- [QR-билет и письмо на почту](prompts/01-2-qr-bilet-i-pismo-na-pochtu.md)
-- [Админка со сканером на входе](prompts/01-3-adminka-so-skanerom-na-vhode.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/01-1-shema-dannyh-i-lending-s-registraciey.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/01-1-shema-dannyh-i-lending-s-registraciey.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/01-2-qr-bilet-i-pismo-na-pochtu.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/01-2-qr-bilet-i-pismo-na-pochtu.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/01-3-adminka-so-skanerom-na-vhode.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/01-3-adminka-so-skanerom-na-vhode.md)
 
 ## 2. Мини-игра, которую каждый день дописывает роутина Claude
 
@@ -36,11 +36,11 @@ AI-креатор, вайбкодер. Калининград.
 
 **Промты:**
 
-- [Концепт до кода](prompts/02-1-koncept-do-koda.md)
-- [Сборка проекта](prompts/02-2-sborka-proekta.md)
-- [Точечный разбор багов](prompts/02-3-tochechnyy-razbor-bagov.md)
-- [Оператор ежедневной роутины](prompts/02-4-operator-ezhednevnoy-routiny.md)
-- [Когда бэклог кончился — роутина переключилась на проверку](prompts/02-5-kogda-beklog-konchilsya-routina-pereklyuch.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/02-1-koncept-do-koda.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/02-1-koncept-do-koda.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/02-2-sborka-proekta.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/02-2-sborka-proekta.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/02-3-tochechnyy-razbor-bagov.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/02-3-tochechnyy-razbor-bagov.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/02-4-operator-ezhednevnoy-routiny.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/02-4-operator-ezhednevnoy-routiny.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/02-5-kogda-beklog-konchilsya-routina-pereklyuch.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/02-5-kogda-beklog-konchilsya-routina-pereklyuch.md)
 
 ## 3. Лендинг производителя гардеробных систем
 
@@ -53,7 +53,7 @@ AI-креатор, вайбкодер. Калининград.
 
 **Промты:**
 
-- [Промт целиком](prompts/04-1-promt-celikom.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/04-1-promt-celikom.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/04-1-promt-celikom.md)
 
 ## 4. Три дизайн-концепции до первой строки кода
 
@@ -63,8 +63,8 @@ AI-креатор, вайбкодер. Калининград.
 
 **Промты:**
 
-- [Дизайн-исследование](prompts/05-1-dizayn-issledovanie.md)
-- [Вёрстка по выбранной концепции](prompts/05-2-verstka-po-vybrannoy-koncepcii.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/05-1-dizayn-issledovanie.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/05-1-dizayn-issledovanie.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/05-2-verstka-po-vybrannoy-koncepcii.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/05-2-verstka-po-vybrannoy-koncepcii.md)
 
 ## 5. Шесть кадров, которые выглядят как один фотосет
 
@@ -76,7 +76,7 @@ AI-креатор, вайбкодер. Калининград.
 
 **Промты:**
 
-- [Общая база, шесть кадров и список проверки](prompts/06-1-obschaya-baza-shest-kadrov-i-spisok-prover.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/06-1-obschaya-baza-shest-kadrov-i-spisok-prover.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/06-1-obschaya-baza-shest-kadrov-i-spisok-prover.md)
 
 ## 6. Бот, который не теряет источник лида
 
@@ -87,7 +87,7 @@ AI-креатор, вайбкодер. Калининград.
 
 **Промты:**
 
-- [Постановка задачи от метрики, а не от функции](prompts/08-1-postanovka-zadachi-ot-metriki-a-ne-ot-funk.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/08-1-postanovka-zadachi-ot-metriki-a-ne-ot-funk.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/08-1-postanovka-zadachi-ot-metriki-a-ne-ot-funk.md)
 
 ## 7. Конспект мастер-класса как лид-магнит
 
@@ -99,7 +99,7 @@ AI-креатор, вайбкодер. Калининград.
 
 **Промты:**
 
-- [Промт с запретом достраивать](prompts/09-1-promt-s-zapretom-dostraivat.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/09-1-promt-s-zapretom-dostraivat.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/09-1-promt-s-zapretom-dostraivat.md)
 
 ## 8. Свадебная фотогалерея в реальном времени
 
@@ -111,5 +111,5 @@ AI-креатор, вайбкодер. Калининград.
 
 **Промты:**
 
-- [Постановка от условий зала, а не от макета](prompts/10-1-postanovka-ot-usloviy-zala-a-ne-ot-maketa.md)
-- [Вход, который не выглядит как форма](prompts/10-2-vhod-kotoryy-ne-vyglyadit-kak-forma.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/10-1-postanovka-ot-usloviy-zala-a-ne-ot-maketa.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/10-1-postanovka-ot-usloviy-zala-a-ne-ot-maketa.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/10-2-vhod-kotoryy-ne-vyglyadit-kak-forma.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/10-2-vhod-kotoryy-ne-vyglyadit-kak-forma.md)

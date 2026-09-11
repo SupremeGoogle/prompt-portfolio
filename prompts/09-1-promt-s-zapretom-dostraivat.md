@@ -58,4 +58,4 @@ React, Tailwind, появление секций через Framer Motion —
 
 ---
 
-[← оглавление](../README.md)
+[https://github.com/SupremeGoogle/prompt-portfolio](https://github.com/SupremeGoogle/prompt-portfolio)

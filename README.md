@@ -66,17 +66,19 @@ AI-креатор, вайбкодер. Калининград.
 - [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/05-1-dizayn-issledovanie.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/05-1-dizayn-issledovanie.md)
 - [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/05-2-verstka-po-vybrannoy-koncepcii.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/05-2-verstka-po-vybrannoy-koncepcii.md)
 
-## 5. Шесть кадров, которые выглядят как один фотосет
+## 5. Один фотосет из шести кадров и десять секунд бренд-ролика
 
-*Генерация изображений*
+*Генерация изображений и видео*
 
 - **Проект:** [https://crown-shine.vercel.app](https://crown-shine.vercel.app) — студия детейлинга, рынок США
 - **Код:** [https://github.com/SupremeGoogle/CROWN-SHINE](https://github.com/SupremeGoogle/CROWN-SHINE)
-- **Задача:** Шесть кадров одного фотосета для первого экрана, галереи работ и блока услуг
+- **Ролик:** [https://disk.yandex.ru/d/mqkh8iDKnGrJcw](https://disk.yandex.ru/d/mqkh8iDKnGrJcw) — DARKHOST, 10 секунд, 16:9
+- **Задача:** Шесть кадров одного фотосета для первого экрана, галереи работ и блока услуг; отдельно — бренд-ролик с покадровым таймлайном
 
 **Промты:**
 
 - [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/06-1-obschaya-baza-shest-kadrov-i-spisok-prover.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/06-1-obschaya-baza-shest-kadrov-i-spisok-prover.md)
+- [https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/06-2-desyat-sekund-brend-rolika-po-referensu.md](https://github.com/SupremeGoogle/prompt-portfolio/blob/main/prompts/06-2-desyat-sekund-brend-rolika-po-referensu.md)
 
 ## 6. Бот, который не теряет источник лида
 
